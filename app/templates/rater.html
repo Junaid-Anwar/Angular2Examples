@@ -1,0 +1,149 @@
+﻿
+<div class="container">
+    <div class="row form-group">
+        <div class="col-md-12 no-padding">
+            <ul class="nav nav-pills nav-justified thumbnail tab-panel" role="tablist">
+                <li role="presentation" class="active">
+                    <a href="#step-1" data-toggle="tab" aria-controls="step1" role="tab" title="Vehicle Information">
+                        <h4 class="list-group-item-heading">Vehicle Information</h4>
+                        <p class="list-group-item-text">Vehicle Coverage Information</p>
+                    </a>
+                </li>
+                <li role="presentation" class="disabled">
+                    <a href="#step-2" data-toggle="tab" aria-controls="step2" role="tab" title="Drive Other Car Coverage">
+                        <h4 class="list-group-item-heading">Drive Other Car</h4>
+                        <p class="list-group-item-text">Drive Other Car Coverage (Optional)</p>
+                    </a>
+                </li>
+                <li role="presentation" class="disabled">
+                    <a href="#step-3" data-toggle="tab" aria-controls="step3" role="tab" title="Non-Ownership Coverage">
+                        <h4 class="list-group-item-heading">Non-Ownership</h4>
+                        <p class="list-group-item-text">Non-Ownership Coverage (Optional)</p>
+                    </a>
+                </li>
+                <li role="presentation" class="disabled">
+                    <a href="#step-4" data-toggle="tab" aria-controls="step4" role="tab" title="Hired Auto/Cost of Hire">
+                        <h4 class="list-group-item-heading">Cost of Hire</h4>
+                        <p class="list-group-item-text">Hired Auto/Cost of Hire (Optional)</p>
+                    </a>
+                </li>
+                <li role="presentation" class="disabled">
+                    <a href="#step-5" data-toggle="tab" aria-controls="step5" role="tab" title="Endorsements">
+                        <h4 class="list-group-item-heading">Endorsements</h4>
+                        <p class="list-group-item-text">Desired Coverage (Optional)</p>
+                    </a>
+                </li>
+                <li role="presentation" class="disabled">
+                    <a href="#step-6" data-toggle="tab" aria-controls="step6" role="tab" title="Results">
+                        <h4 class="list-group-item-heading">Results</h4>
+                        <p class="list-group-item-text">Quote Results</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<form class="container">
+    <div class="row tab-content" id="step-1" role="tabpanel">
+        <div class="col-md-12 well">
+            <h1> STEP 1</h1>
+
+            <div class="form-group text-center">
+                <button class="btn btn-primary btn-next">Next</button>
+            </div>
+        </div>
+    </div>
+</form>
+<form class="container">
+    <div class="row tab-content" id="step-2" role="tabpanel">
+        <div class="col-md-12 well">
+            <h1 class="text-center"> STEP 2</h1>
+
+            <div class="form-group text-center">
+                <button class="btn btn-primary btn-prev">Previous</button>
+                <button class="btn btn-primary btn-next">Next</button>
+            </div>
+        </div>
+    </div>
+</form>
+<form class="container">
+    <div class="row tab-content" id="step-3" role="tabpanel">
+        <div class="col-md-12 well">
+            <h1 class="text-center"> STEP 3</h1>
+
+            <div class="form-group text-center">
+                <button class="btn btn-primary btn-prev">Previous</button>
+                <button class="btn btn-primary btn-next">Next</button>
+            </div>
+        </div>
+    </div>
+</form>
+<form class="container">
+    <div class="row tab-content" id="step-4" role="tabpanel">
+        <div class="col-md-12 well">
+            <h1 class="text-center"> STEP 4</h1>
+
+            <div class="form-group text-center">
+                <button class="btn btn-primary btn-prev">Previous</button>
+                <button class="btn btn-primary btn-next">Next</button>
+            </div>
+        </div>
+    </div>
+</form>
+<form class="container">
+    <div class="row tab-content" id="step-5" role="tabpanel">
+        <div class="col-md-12 well">
+            <h1 class="text-center">STEP 5</h1>
+
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" class="form-control" placeholder="Name"
+                       name="name" ngModel #nameModel="ngModel" required minlength="4" maxlength="24">
+                <div *ngIf="nameModel.errors && (nameModel.dirty || nameModel.touched)"
+                     class="alert alert-danger">
+                    <div [hidden]="!nameModel.errors.required">
+                        Name is required.
+                    </div>
+                    <div [hidden]="!nameModel.errors.minlength">
+                        Name must be at least 4 characters long.
+                    </div>
+                    <div [hidden]="!nameModel.errors.maxlength">
+                        Name cannot be more than 24 characters long.
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="btn-group" data-toggle="buttons">
+                <label class="btn btn-primary active">
+                    <input type="radio" name="options" id="option1" autocomplete="off" checked> Radio 1 (preselected)
+                </label>
+                <label class="btn btn-primary">
+                    <input type="radio" name="options" id="option2" autocomplete="off"> Radio 2
+                </label>
+                <label class="btn btn-primary">
+                    <input type="radio" name="options" id="option3" autocomplete="off"> Radio 3
+                </label>
+            </div>
+
+
+
+            <div class="form-group text-center">
+                <button class="btn btn-primary btn-prev">Previous</button>
+                <button class="btn btn-primary btn-next">Next</button>
+            </div>
+        </div>
+    </div>
+</form>
+<form class="container">
+    <div class="row tab-content" id="step-6" role="tabpanel">
+        <div class="col-md-12 well">
+            <h1 class="text-center"> STEP 6</h1>
+
+            <div class="form-group text-center">
+                <button class="btn btn-primary btn-prev">Previous</button>
+            </div>
+        </div>
+    </div>
+</form>

@@ -1,0 +1,32 @@
+﻿<form [formGroup]="reactiveForm" (ngSubmit)="submitForm(reactiveForm.value)">
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="text-center">{{title}}</h1>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" class="form-control" placeholder="Name" name="name" [formControl]="reactiveForm.controls['name']">
+            </div>
+            <div class="form-group">
+                <label for="gender">Gender</label><br />
+                <label class="radio-inline">
+                    <input type="radio" name="gender" value="Male" [formControl]="reactiveForm.controls['gender']"> Male
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="gender" value="Female" [formControl]="reactiveForm.controls['gender']"> Female
+                </label>
+            </div>
+            <div class="form-group">
+                <label>Activities</label><br />
+                <label class="checkbox-inline">
+                    <input type="checkbox" name="hiking" value="hiking" [formControl]="reactiveForm.controls['hiking']"> Hiking
+                </label>
+                <label class="checkbox-inline">
+                    <input type="checkbox" name="running" value="running" [formControl]="reactiveForm.controls['running']"> Running
+                </label>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+    </div>
+</form>

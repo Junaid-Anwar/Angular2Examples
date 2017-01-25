@@ -1,0 +1,23 @@
+﻿<div class="container">
+    <div class="jumbotron">
+        <h1 class="text-center">{{title}}</h1>
+    </div>
+    <div class="jumbotron">                
+        <h2>Two Way Binding (ngModel Directive)</h2>        
+        <h3>{{name}}</h3>
+        <input type="text" name="name" id="name" [(ngModel)]="name" placeholder="Start typing..." class="form-control"/>
+        <hr />
+        <h2>Two Way Binding (Expression with Event Binding)</h2>
+        <h3>{{email}}</h3>
+        <input type="text" name="email" id="email" placeholder="Start typing..." class="form-control" (input)="email=$event.target.value"/>
+        <hr />
+        <h2>AutoGrow Directive</h2>
+        <input type="text" name="email" id="email" placeholder="Email" class="form-control" style="width:500px" autoGrow />
+        <hr />
+        <hobbies></hobbies>
+        <hr />
+        <courses></courses>
+        <hr />
+        <posts></posts>
+    </div>
+</div>

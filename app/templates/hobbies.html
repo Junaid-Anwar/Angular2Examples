@@ -1,0 +1,10 @@
+﻿<h2>Toggle Div</h2>
+<button class="btn btn-primary" (click)="toggleHobbies()">{{showHobbies?"Hide Hobbies":"Show Hobbies"}}</button>
+<div *ngIf="showHobbies">
+    <p>{{ title }}</p>
+    <ul>
+        <li *ngFor="let hobby of hobbies">
+            {{ hobby }}
+        </li>
+    </ul>
+</div>
