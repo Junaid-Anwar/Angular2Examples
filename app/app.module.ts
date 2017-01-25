@@ -24,13 +24,14 @@ import { PostsService } from './services/posts.service';
 
 //directives
 import { AutoGrowDirective } from './directives/autogrow.directive';
+import { HighlightDirective } from './directives/highlight.directive';
 
 //route
 import { routing } from './app.routes';
 
 @NgModule({
     imports: [BrowserModule, FormsModule, ReactiveFormsModule, HttpModule, routing],
-    declarations: [AppComponent, HelloWorldComponent, HobbiesComponent, CoursesComponent, PostsComponent, JQueryComponent, UserComponent, SimpleFormComponent, ReactiveFormComponent, ReactiveFormValidationComponent, CardComponent, CardsComponent, RaterComponent, AutoGrowDirective],
+    declarations: [AppComponent, HelloWorldComponent, HobbiesComponent, CoursesComponent, PostsComponent, JQueryComponent, UserComponent, SimpleFormComponent, ReactiveFormComponent, ReactiveFormValidationComponent, CardComponent, CardsComponent, RaterComponent, AutoGrowDirective, HighlightDirective],
     bootstrap: [AppComponent],
     providers: [CoursesService, PostsService],
     schemas: [NO_ERRORS_SCHEMA]

@@ -10,4 +10,5 @@ export class HelloWorldComponent {
     title = 'Hello World!!!!!';
     name: string;
     email: string;
+    color: string;
 }
