@@ -3,7 +3,7 @@
 import { CoursesService } from '../services/courses.service';
 
 @Component({
-    moduleId: module.id,
+    moduleId: module.id.replace("dist", ""),
     selector: 'courses',
     templateUrl: '../templates/courses.html'
 })

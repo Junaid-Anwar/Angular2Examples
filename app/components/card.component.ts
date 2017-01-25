@@ -1,7 +1,7 @@
 ﻿import { Component, Input, Output } from '@angular/core';
 
 @Component({
-    moduleId: module.id,
+    moduleId: module.id.replace("dist", ""),
     selector: 'card',
     templateUrl: '../templates/card.html'
 })

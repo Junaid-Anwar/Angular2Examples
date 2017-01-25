@@ -3,7 +3,7 @@
 declare var jQuery: any;
 
 @Component({
-    moduleId: module.id,
+    moduleId: module.id.replace("dist", ""),
     selector: 'rater',
     templateUrl: '../templates/rater.html'
 })

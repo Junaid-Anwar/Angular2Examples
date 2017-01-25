@@ -2,7 +2,7 @@
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
-    moduleId: module.id,
+    moduleId: module.id.replace("dist", ""),
     selector: 'reactive-form-validation',
     templateUrl: '../templates/reactiveformvalidation.html'
 })

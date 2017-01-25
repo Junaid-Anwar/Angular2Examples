@@ -2,7 +2,7 @@
 import { FormBuilder, FormGroup } from '@angular/forms';
 
 @Component({
-    moduleId: module.id,
+    moduleId: module.id.replace("dist", ""),
     selector: 'reactive-form',
     templateUrl: '../templates/reactiveform.html'
 })

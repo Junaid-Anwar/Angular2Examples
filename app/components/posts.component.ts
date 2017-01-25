@@ -4,7 +4,7 @@ import { PostsService } from '../services/posts.service';
 import { IPost } from '../models/Post';
 
 @Component({
-    moduleId: module.id,
+    moduleId: module.id.replace("dist", ""),
     selector: 'posts',
     templateUrl: '../templates/posts.html'
 })

@@ -3,7 +3,7 @@
 import { IUser } from '../models/user';
 
 @Component({
-    moduleId: module.id,
+    moduleId: module.id.replace("dist", ""),
     selector: 'user',
     templateUrl: '../templates/user.html'
 })
