@@ -23,6 +23,25 @@
                 <validationmessage [control]="dynamicValidationForm.controls.creditCardNumber" label="Credit Card Number"></validationmessage>
             </div>
             <div class="form-group">
+                <label for="gender">Gender</label><br />
+                <label class="radio-inline">
+                    <input type="radio" value="Male" formControlName="gender"> Male
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" value="Female" formControlName="gender"> Female
+                </label>
+                <validationmessage [control]="dynamicValidationForm.controls.gender" label="Gender"></validationmessage>
+            </div>
+            <div class="form-group">
+                <label>Activities</label><br />
+                <label class="checkbox-inline">
+                    <input type="checkbox" name="hiking" value="hiking" formControlName="hiking"> Hiking
+                </label>
+                <label class="checkbox-inline">
+                    <input type="checkbox" name="running" value="running" formControlName="running"> Running
+                </label>
+            </div>
+            <div class="form-group">
                 <button type="submit" class="btn btn-primary" [disabled]="!dynamicValidationForm.valid">Submit</button>
             </div>
         </div>

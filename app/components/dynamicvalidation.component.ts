@@ -19,7 +19,10 @@ export class DynamicValidationComponent {
             name: ['', [Validators.required, Validators.minLength(4), Validators.maxLength(24)]],
             birthYear: ['', [Validators.required, Validators.pattern('^\\d{4}$')]],
             email: ['', [Validators.required, CustomValidators.email]],
-            creditCardNumber: ['', [Validators.required, CustomValidators.creditcard]]
+            creditCardNumber: ['', [Validators.required, CustomValidators.creditcard]],
+            gender: [null, [Validators.required]],
+            hiking: [false],
+            running: [false]
         });
 
     }
