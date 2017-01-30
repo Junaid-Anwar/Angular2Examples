@@ -1,0 +1,30 @@
+﻿<form [formGroup]="dynamicValidationForm" (ngSubmit)="submitForm(dynamicValidationForm.value)">
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="text-center">{{title}}</h1>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" placeholder="Name" formControlName="name" required>
+                <validationmessage [control]="dynamicValidationForm.controls.name" label="Name"></validationmessage>
+            </div>
+            <div class="form-group">
+                <label for="birthYear">Year of Birth</label>
+                <input type="text" class="form-control" placeholder="Year of Birth" formControlName="birthYear" required>
+                <validationmessage [control]="dynamicValidationForm.controls.birthYear" label="Year of Birth" message="Year of birth must be a year."></validationmessage>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" placeholder="Email" formControlName="email" required>
+                <validationmessage [control]="dynamicValidationForm.controls.email" label="Email"></validationmessage>
+            </div>
+            <div class="form-group">
+                <label for="creditCardNumber">Credit Card Number</label>
+                <input type="text" class="form-control" placeholder="Credit Card Number" formControlName="creditCardNumber" required>
+                <validationmessage [control]="dynamicValidationForm.controls.creditCardNumber" label="Credit Card Number"></validationmessage>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary" [disabled]="!dynamicValidationForm.valid">Submit</button>
+            </div>
+        </div>
+    </div>
+</form>
