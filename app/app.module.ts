@@ -5,6 +5,7 @@ import { HttpModule } from '@angular/http';
 
 //components
 import { AppComponent } from './app.component';
+import { ValidationMessageComponent } from './components/validationmessage.component';
 import { HelloWorldComponent } from './components/helloworld.component';
 import { HobbiesComponent } from './components/hobbies.component';
 import { CoursesComponent } from './components/courses.component';
@@ -14,6 +15,7 @@ import { UserComponent } from './components/user.component';
 import { SimpleFormComponent } from './components/simpleform.component';
 import { ReactiveFormComponent } from './components/reactiveform.component';
 import { ReactiveFormValidationComponent } from './components/reactiveformvalidation.component';
+import { DynamicValidationComponent } from './components/dynamicvalidation.component';
 import { CardComponent } from './components/card.component';
 import { CardsComponent } from './components/cards.component';
 import { RaterComponent } from './components/rater.component';
@@ -31,7 +33,7 @@ import { routing } from './app.routes';
 
 @NgModule({
     imports: [BrowserModule, FormsModule, ReactiveFormsModule, HttpModule, routing],
-    declarations: [AppComponent, HelloWorldComponent, HobbiesComponent, CoursesComponent, PostsComponent, JQueryComponent, UserComponent, SimpleFormComponent, ReactiveFormComponent, ReactiveFormValidationComponent, CardComponent, CardsComponent, RaterComponent, AutoGrowDirective, HighlightDirective],
+    declarations: [AppComponent, ValidationMessageComponent, HelloWorldComponent, HobbiesComponent, CoursesComponent, PostsComponent, JQueryComponent, UserComponent, SimpleFormComponent, ReactiveFormComponent, ReactiveFormValidationComponent, DynamicValidationComponent, CardComponent, CardsComponent, RaterComponent, AutoGrowDirective, HighlightDirective],
     bootstrap: [AppComponent],
     providers: [CoursesService, PostsService],
     schemas: [NO_ERRORS_SCHEMA]

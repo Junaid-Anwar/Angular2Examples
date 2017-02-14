@@ -7,6 +7,7 @@ import { UserComponent } from './components/user.component';
 import { SimpleFormComponent } from './components/simpleform.component';
 import { ReactiveFormComponent } from './components/reactiveform.component';
 import { ReactiveFormValidationComponent } from './components/reactiveformvalidation.component';
+import { DynamicValidationComponent } from './components/dynamicvalidation.component';
 import { CardsComponent } from './components/cards.component';
 import { RaterComponent } from './components/rater.component';
 
@@ -35,6 +36,10 @@ const routes: Routes = [
     {
         path: 'reactiveformvalidation',
         component: ReactiveFormValidationComponent
+    },
+    {
+        path: 'dynamicvalidation',
+        component: DynamicValidationComponent
     },
     {
         path: 'cards',
